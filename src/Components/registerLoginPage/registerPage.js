@@ -6,26 +6,27 @@ import { NavLink } from 'react-router-dom';
 function RegisterPage() {
     return (
         <div>
+            <form>
             <div className={styles.registerPageForm}>
                 <h2>Sign up</h2>
                 <div className={styles.registerForm}>
                     <span className={styles.subTitleForm}>Full Name</span>
-                    <input placeholder='Name...' />
+                    <input required placeholder='Name...' />
                     <hr />
                 </div>
                 <div className={styles.registerForm}>
                     <span className={styles.subTitleForm}>Email</span>
-                    <input placeholder='Email...' />
+                    <input required placeholder='Email...' />
                     <hr />
                 </div>
                 <div className={styles.registerForm}>
                     <span className={styles.subTitleForm}>Password</span>
-                    <input placeholder='*******' type='password' />
+                    <input required placeholder='*******' type='password' />
                     <hr />
                 </div>
                 <div className={styles.registerForm}>
                     <span className={styles.subTitleForm}>Repeat password</span>
-                    <input placeholder='*******' type='password' />
+                    <input required placeholder='*******' type='password' />
                     <hr />
                 </div>
                 <div className={styles.registerForm}>
@@ -33,18 +34,18 @@ function RegisterPage() {
                     <span className={styles.subTitleForm}>Rieltor or Client</span>
                     <div className={styles.roleChoice}>
                         <div className={styles.Proffesion}>
-                            <input type='radio' value='Client' name='user' checked className={styles.radioBtn} />
+                            <input required type='radio' value='Client' name='user' checked className={styles.radioBtn} />
                             <label htmlFor='Client'>Client</label>
                         </div>
                         <div className={styles.Proffesion}>
-                            <input type='radio' value='Rieltor' name='user' className={styles.radioBtn} />
+                            <input required type='radio' value='Rieltor' name='user' className={styles.radioBtn} />
                             <label htmlFor='Rieltor'>Rieltor</label>
                         </div>
                     </div>
                     <hr />
                 </div>
                 <div className={styles.checkBoxWrapper}>
-                    <input type='checkbox' value='checkbox' name='checkbox for accepting rules' className={styles.checkBox} />
+                    <input required type='checkbox' value='checkbox' name='checkbox for accepting rules' className={styles.checkBox} />
                     <div className={styles.labelWrapper}>
                         <label htmlFor='checkbox' className={styles.label}>I agree to the Terms of user</label>
                     </div>
@@ -54,6 +55,7 @@ function RegisterPage() {
                 <button className={styles.signUpBtn}>Sign up</button>
                 <div> <NavLink to='/login' style={{ textDecoration: 'none', textColor: 'black' }}><span>Sign in &#8594;</span></NavLink></div>
             </div>
+            </form>
         </div>
     )
 }

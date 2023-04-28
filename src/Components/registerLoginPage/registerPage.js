@@ -52,7 +52,7 @@ function RegisterPage() {
             </div>
             <div className={styles.resgiterButtons}>
                 <button className={styles.signUpBtn}>Sign up</button>
-                <NavLink to='/login' style={{ textDecoration: 'none', textColor: 'black' }} activeStyle={{ color: 'black' }}><span>Sign in &#8594;</span></NavLink>
+                <div> <NavLink to='/login' style={{ textDecoration: 'none', textColor: 'black' }}><span>Sign in &#8594;</span></NavLink></div>
             </div>
         </div>
     )

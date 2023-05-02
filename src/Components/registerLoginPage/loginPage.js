@@ -9,16 +9,18 @@ function LoginPage() {
       <form>
         <div className={styles.registerPageForm}>
           <h2>Sign in</h2>
-          <div className={styles.registerForm}>
-            <span className={styles.subTitleForm}>Email</span>
-            <input placeholder='Email...' />
-            <hr />
-          </div>
-          <div className={styles.registerForm}>
-            <span className={styles.subTitleForm}>Password</span>
-            <input placeholder='*******' type='password' />
-            <hr />
-          </div>
+          <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Email adress...</span>
+                    <i></i>
+                </div>
+                <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Password</span>
+                    <i></i>
+                </div>
         </div>
         <div className={styles.resgiterButtons}>
           <div> <NavLink to='/' style={{ textDecoration: 'none', textColor: 'black' }}><span>Sign up &#8594;</span></NavLink></div>

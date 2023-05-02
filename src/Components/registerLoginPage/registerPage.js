@@ -8,26 +8,30 @@ function RegisterPage() {
         <div>
             <form>
             <div className={styles.registerPageForm}>
-                <h2>Sign up</h2>
-                <div className={styles.registerForm}>
-                    <span className={styles.subTitleForm}>Full Name</span>
-                    <input required placeholder='Name...' />
-                    <hr />
+                <span className={styles.h2}>Sign up</span>
+                <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Name...</span>
+                    <i></i>
                 </div>
-                <div className={styles.registerForm}>
-                    <span className={styles.subTitleForm}>Email</span>
-                    <input required placeholder='Email...' />
-                    <hr />
+                <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Email adress...</span>
+                    <i></i>
                 </div>
-                <div className={styles.registerForm}>
-                    <span className={styles.subTitleForm}>Password</span>
-                    <input required placeholder='*******' type='password' />
-                    <hr />
+                <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Password</span>
+                    <i></i>
                 </div>
-                <div className={styles.registerForm}>
-                    <span className={styles.subTitleForm}>Repeat password</span>
-                    <input required placeholder='*******' type='password' />
-                    <hr />
+                <div className={styles.registerFormTest}>
+                    {/* <span className={styles.subTitleForm}>Full Name</span> */}
+                    <input required/>
+                    <span className={styles.span}>Repeat password</span>
+                    <i></i>
                 </div>
                 <div className={styles.registerForm}>
 
